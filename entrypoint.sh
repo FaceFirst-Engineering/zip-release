@@ -10,7 +10,7 @@ then
   cd $INPUT_DIRECTORY
 fi
 
-if [ "$INPUT_TYPE" = "zip" ] 
+if [ "$INPUT_TYPE" = "zip" ] || [ "$INPUT_TYPE" = "7z" ] 
 then
   if [ "$RUNNER_OS" = "Windows" ]
   then
