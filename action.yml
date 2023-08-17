@@ -36,7 +36,8 @@ inputs:
 runs:
   using: composite
   steps:
-    - shell: bash
+    - shell: pwsh
+    # - shell: bash
       env:
         INPUT_FILENAME: ${{ inputs.filename }}
         INPUT_PATH: ${{ inputs.path }}
