@@ -5,11 +5,6 @@ set -eu
 
 printf "\n📦 Creating %s archive...\n" "$INPUT_TYPE"
 
-if [ -n "$INPUT_COMMAND" ]
-then
-  eval $INPUT_COMMAND
-fi
-
 if [ "$INPUT_DIRECTORY" != "." ] 
 then
   cd "$INPUT_DIRECTORY"
